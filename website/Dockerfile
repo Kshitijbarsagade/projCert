@@ -14,5 +14,5 @@ COPY index.php /var/www/html/
 EXPOSE 80
 
 # Start Apache when the container launches
-CMD ["apache2-foreground"]
+CMD ["apache2", "-D", "FOREGROUND"]
 
