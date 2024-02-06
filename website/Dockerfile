@@ -3,6 +3,7 @@ FROM  devopsedu/webapp
 
 # Set the working directory in the container
 WORKDIR /var/www/html
+ENV APACHE_RUN_DIR /var/run/apache2
 
 # Copy PHP files from the website folder into the container
 COPY index.php /var/www/html/
