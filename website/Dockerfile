@@ -5,7 +5,7 @@ FROM  devopsedu/webapp
 WORKDIR /var/www/html
 
 # Copy PHP files from the website folder into the container
-COPY ./website/ /var/www/html/
+COPY ./website/index.php /var/www/html/
 
 # Install any needed dependencies
 # RUN commands to install additional PHP extensions, if required
