@@ -1,5 +1,5 @@
 # Use an official PHP runtime as a parent image
-FROM  devopsedu/webapp
+FROM  php:7.4-apache
 
 # Set the working directory in the container
 WORKDIR /var/www/html
@@ -15,5 +15,5 @@ COPY index.php /var/www/html/
 EXPOSE 80
 
 # Start Apache when the container launches
-CMD ["apache2", "-D", "FOREGROUND"]
+CMD ["apache2-foreground"]
 
